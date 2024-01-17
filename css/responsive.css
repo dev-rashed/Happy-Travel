@@ -15,6 +15,11 @@
     main {
         padding: 0px 20px;
     }
+
+    h2 {
+        font-size: 20px !important;
+        font-weight: 800 !important;
+    }
     /* global css end */
     /* header css  */
     header {
@@ -79,4 +84,36 @@
     }
     
     /* Destination styles end */
+
+    /* why choose us  */
+    #why-choose-us .container.cards {
+        grid-template-columns: 1fr;
+    }
+    /* why choose us end */
+
+    /* Deals & Discount styles  */
+    #deals-discount .deals {
+        padding: 187px 16px 16px 16px;
+    }
+    #deals-discount .deals ul li {
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+
+    #deals-discount .deals .wrapper {
+        padding: 24px;
+    }
+    
+    /* Deals & Discount styles end */
+
+    /* Perfect place section  */
+    #perfect-place .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+    #perfect-place img {
+        margin-top: 16px;
+    }
+    /* Perfect place section end */
 }
