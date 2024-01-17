@@ -66,4 +66,17 @@
         margin-top: 16px;
     }
     /* popular-tours styles end */
+
+    /* Destination styles  */
+    #destination .gallery .row:first-child,
+    #destination .gallery .row:nth-child(2),
+    #destination .gallery .row:last-child {
+        grid-template-columns: 1fr;
+    }
+
+    #destination .gallery {
+        grid-template-rows: 1fr;
+    }
+    
+    /* Destination styles end */
 }
