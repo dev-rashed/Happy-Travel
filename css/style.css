@@ -1,0 +1,235 @@
+/* variable declaration  */
+:root {
+    --global-font: 'Mulish', sans-serif;
+    --white-color: #fff;
+    --black-color: #131318;
+    --light-color: rgba(19, 19, 24, 0.70);
+    --orange-color: #FF5400;
+    --title-font-size: 40px;
+}
+
+/* Global css  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--global-font);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: var(--white-color)
+}
+
+.text-black {
+    color: var(--black-color)
+}
+
+.text-light {
+    color: var(--light-color)
+}
+
+.bg-orange {
+    background-color: var(--orange-color)
+}
+
+.text-orange {
+    color: var(--orange-color);
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.text-title {
+    font-size: var(--title-font-size);
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--black-color);
+}
+
+.radius {
+    border-radius: 16px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.btn-orange {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-orange:hover {
+    background-color: #ce5a21;
+}
+
+/* Header styles  */
+header {
+    padding: 50px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo a {
+    font-size: 36px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+header .logo img {
+    float: left;
+    margin-right: 16px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul a {
+    text-decoration: none;
+    padding: 10px 22px;
+    line-height: 44px;
+    font-size: 18px;
+}
+
+header nav ul a:hover,
+header nav ul a.active {
+    color: var(--orange-color);
+}
+
+header nav ul li:last-child a {
+    padding-right: 0px;
+}
+/* Header styles end */
+
+/* Hero section styles  */
+#hero-section .container {
+    padding: 106px 185px;
+    background: url(../images/hero-bg.png) no-repeat center center/cover;
+    position: relative;
+}
+
+#hero-section .container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    z-index: 1;
+    border-radius: 16px;
+}
+
+#hero-section .wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+#hero-section h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+#hero-section p {
+    margin: 24px 0px;
+    line-height: 26px;
+}
+
+#hero-section form {
+    margin-top: 48px;
+    padding: 16px;
+    background: #ffffff52;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+#hero-section form input,
+#hero-section form select {
+    padding: 16px;
+    color: rgba(19, 19, 24, 0.50);
+    border-radius: 8px;
+    border: unset;
+}
+
+#hero-section form input:focus-visible,
+#hero-section form select:focus-visible {
+    outline: unset;
+    box-shadow: unset;
+}
+
+#hero-section form button {
+    border-radius: 8px;
+    padding: 16px;
+    border: 0px;
+}
+
+#hero-section form button span {
+    margin-right: 6px;
+}
+/* Hero section styles end */
+
+/* popular-tours styles  */
+#popular-tours .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 53px;
+}
+
+#popular-tours ul {
+    margin-left: 20px;
+}
+
+#popular-tours ul li {
+    margin-top: 15px;
+}
+
+#popular-tours a {
+    margin-top: 32px;
+    display: inline-block;
+}
+
+#popular-tours img {
+    float: right;
+    width: 100%;
+}
+/* popular-tours styles end */
+
+/* destination styles  */
+#destination .gallery {
+    margin-top: 48px;
+    display: grid;
+}
+
+#destination .gallery>div {
+    position: relative;
+}
+
+#destination .gallery p {
+    position: absolute;
+}
+/* destination styles end */
