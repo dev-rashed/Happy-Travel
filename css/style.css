@@ -129,7 +129,7 @@ header nav ul li:last-child a {
 /* Hero section styles  */
 #hero-section .container {
     padding: 106px 185px;
-    background: url(../images/hero-bg.png) no-repeat center center/cover;
+    background: url(../resources/hero-bg.png) no-repeat center center/cover;
     position: relative;
 }
 
@@ -328,11 +328,11 @@ header nav ul li:last-child a {
 
 #deals-discount .deals.deals-1,
 #deals-discount .deals.deals-3 {
-    background: url(../images/deals_1.png) no-repeat center center/cover;
+    background: url(../resources/deals_1.png) no-repeat center center/cover;
 }
 
 #deals-discount .deals.deals-2 {
-    background: url(../images/deals_2.png) no-repeat center center/cover;
+    background: url(../resources/deals_2.png) no-repeat center center/cover;
 }
 
 #deals-discount .deals .wrapper {
